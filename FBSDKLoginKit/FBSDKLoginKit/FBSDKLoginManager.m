@@ -333,7 +333,7 @@ typedef NS_ENUM(NSInteger, FBSDKLoginManagerState) {
   loginParams[@"sdk"] = @"ios";
   loginParams[@"return_scopes"] = @"true";
   loginParams[@"sdk_version"] = FBSDK_VERSION_STRING;
-  loginParams[@"fbapp_pres"] = @([FBSDKInternalUtility isFacebookAppInstalled]);
+  loginParams[@"fbapp_pres"] = @0;
   loginParams[@"auth_type"] = self.authType;
   loginParams[@"logging_token"] = serverConfiguration.loggingToken;
   long long cbtInMilliseconds = round(1000 * [NSDate date].timeIntervalSince1970);
