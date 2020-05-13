@@ -1,3 +1,15 @@
+### FBSDKLoginKit always use web version login (ignore FB App installed for Login)
+
+To matain up to date:
+
+```
+git remote add upstream https://github.com/facebook/facebook-ios-sdk.git
+git checkout master
+git fetch upstream
+git merge upstream/master 
+git push origin master
+```
+
 # Facebook SDK for iOS
 
 [![Platforms](https://img.shields.io/cocoapods/p/FBSDKCoreKit.svg)](https://cocoapods.org/pods/FBSDKCoreKit)
